@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #201E43;
+  --foreground: #EEE;
+  --primary: #134B70;
+  --secondary: #508C9B;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,4 +20,188 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-10 {
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.grid-rows-[20px_1fr_20px] {
+  grid-template-rows: 20px 1fr 20px;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.gap-16 {
+  gap: 4rem;
+}
+
+.sm\:p-20 {
+  padding: 5rem;
+}
+
+.font-\[family-name\:var\(--font-geist-sans\)\] {
+  font-family: var(--font-geist-sans);
+}
+
+.bg-\[\#201E43\] {
+  background-color: #201E43;
+}
+
+.text-\[\#EEE\] {
+  color: #EEE;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.row-start-2 {
+  grid-row-start: 2;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.sm\:items-start {
+  align-items: flex-start;
+}
+
+.grid-cols-10 {
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.border {
+  border: 1px solid var(--foreground);
+}
+
+.bg-\[\#508C9B\] {
+  background-color: #508C9B;
+}
+
+.bg-\[\#134B70\] {
+  background-color: #134B70;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-transparent {
+  border-color: transparent;
+}
+
+.transition-colors {
+  transition: color 0.2s;
+}
+
+.bg-foreground {
+  background-color: var(--foreground);
+}
+
+.text-background {
+  color: var(--background);
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.hover\:bg-\[\#383838\] {
+  &:hover {
+    background-color: #383838;
+  }
+}
+
+.dark\:hover\:bg-\[\#ccc\] {
+  @media (prefers-color-scheme: dark) {
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.sm\:text-base {
+  font-size: 1rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.sm\:h-12 {
+  height: 3rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.sm\:px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
