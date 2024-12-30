@@ -1,11 +1,15 @@
 "use client";
-
 import { useState } from "react";
 import Image from "next/image";
 
 const boardSize = 10;
-const snakes = { 16: 6, 47: 26, 49: 11, 56: 53, 62: 19, 64: 60, 87: 24, 93: 73, 95: 75, 98: 78 };
-const ladders = { 1: 38, 4: 14, 9: 31, 21: 42, 28: 84, 36: 44, 51: 67, 71: 91, 80: 100 };
+
+interface SnakesAndLadders {
+  [key: number]: number;
+}
+
+const snakes: SnakesAndLadders = { 16: 6, 47: 26, 49: 11, 56: 53, 62: 19, 64: 60, 87: 24, 93: 73, 95: 75, 98: 78 };
+const ladders: SnakesAndLadders = { 1: 38, 4: 14, 9: 31, 21: 42, 28: 84, 36: 44, 51: 67, 71: 91, 80: 100 };
 
 export default function Home() {
   const [position, setPosition] = useState(1);
